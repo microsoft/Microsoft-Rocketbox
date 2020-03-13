@@ -19,6 +19,9 @@ Once the files are on the correct unity folders project you can open Unity and i
 ## Contributors
 
 Mar Gonzalez-Franco - Microsoft Research
+
 Eyal Ofek - Microsoft Research
+
 Markus Wojcik - Rocketbox (Original avatar creation team)
+
 Dave Garagan - Havok
