@@ -2,7 +2,7 @@
 The Microsoft Rocketbox Avatar library consists of 115 characters and avatars fully rigged and with high definition that was developed over the course of 10 years. The diversity of the characters and the quality of the rigging together with a relatively low-poly meshes, makes this library the go-to asset among research laboratories worldwide from crowd simulation to real-time avatar embodiment and social Virtual Reality (VR). Ever since their launch, laboratories around the globe have been using the library and many of the lead authors in the VR community have extensively used these avatars during their research.
 
 
-![AvatarsSample](MicrosoftRocketbox/docs/images/AvatarsSample.jpg?raw=true)
+![AvatarsSample](Microsoft-Rocketbox/Docs/AvatarsSample.jpg?raw=true)
 
 ## Setup
 The FixRocketboxMaxImport.cs script needs to go in “Assets/Editor”  in the Unity project. This will fix the import of the 3dsMax materials to Unity. I.e. Max materials assume that diffuse material was set by the texture, whereas Unity multiplies the texture colour with the flat colour. Second Unity's transparent  materials still show specular highlights and thus hair looks like glass sheets. The material mode "Fade" goes to full transparent. The import tool also selects  the highest resolution mesh as being activated by default.
