@@ -27,8 +27,10 @@ Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard S
 
 Mar Gonzalez-Franco - Microsoft Research
 
+Markus Wojcik - Rocketbox (Original avatar creation team)
+
 Eyal Ofek - Microsoft Research
 
-Markus Wojcik - Rocketbox (Original avatar creation team)
+Anthony Steed - University College London, (Visiting Researcher at Microsoft Research when this was conceived)
 
 Dave Garagan - Havok
