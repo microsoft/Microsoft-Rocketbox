@@ -16,6 +16,13 @@ Import the desired avatar folder (including fbx files and textures of the avatar
 
 Once the files are on the correct unity folders project you can open Unity and include the avatar to the scene.
 
+## Documentation
+
+This release goes together with a paper that is in preparation that highlights and reviews the research done with rigged avatars as well as explains the importance of having rigged avatars for Virtual Reality.
+
+Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard Spanlang,  Antonella Maselli, Domna Banakou, Nuria Pelechano, Sergio Orts Escolano, Veronica Orvahlo, Markus Wojcik, Maria V. Sanchez-Vives, Jeremy Bailenson, Mel Slater, and Jaron Lanier
+"Importance of rigging for procedural avatars. Microsoft Rocketbox a public library."
+
 ## Contributors
 
 Mar Gonzalez-Franco - Microsoft Research
