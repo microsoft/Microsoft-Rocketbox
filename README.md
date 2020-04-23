@@ -4,6 +4,7 @@ The Microsoft Rocketbox Avatar library consists of 115 characters and avatars fu
 The announcement about the release here> https://www.microsoft.com/en-us/research/blog/microsoft-rocketbox-avatar-library-now-available-for-research-and-academic-use/
 
 [![AvatarsSample](Docs/AvatarsSample.jpg?raw=true)](https://www.youtube.com/watch?v=43OWnUQH_p4)
+https://www.youtube.com/watch?v=43OWnUQH_p4
 
 ## Setup
 The FixRocketboxMaxImport.cs script under “Assets/Editor” needs to go in “Assets/Editor”  in the Unity project. This will fix the import of the 3dsMax materials to Unity. I.e. Max materials assume that diffuse material was set by the texture, whereas Unity multiplies the texture colour with the flat colour. Second Unity's transparent  materials still show specular highlights and thus hair looks like glass sheets. The material mode "Fade" goes to full transparent. The import tool also selects  the highest resolution mesh as being activated by default.
@@ -23,8 +24,7 @@ This release goes together with a paper that is in preparation that highlights a
 
 Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard Spanlang,  Antonella Maselli, Domna Banakou, Nuria Pelechano, Sergio Orts Escolano, Veronica Orvahlo, Laura Trutoiu, Markus Wojcik, Maria V. Sanchez-Vives, Jeremy Bailenson, Mel Slater, and Jaron Lanier "Importance of rigging for procedural avatars. Microsoft Rocketbox a public library."
 
-[![Watch the video](https://img.youtube.com/vi/43OWnUQH_p4/maxresdefault.jpg)](https://www.youtube.com/watch?v=43OWnUQH_p4)
-https://www.youtube.com/watch?v=43OWnUQH_p4
+
 
 ## Contributors
 
