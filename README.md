@@ -23,6 +23,7 @@ This release goes together with a paper that is in preparation that highlights a
 
 Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard Spanlang,  Antonella Maselli, Domna Banakou, Nuria Pelechano, Sergio Orts Escolano, Veronica Orvahlo, Laura Trutoiu, Markus Wojcik, Maria V. Sanchez-Vives, Jeremy Bailenson, Mel Slater, and Jaron Lanier "Importance of rigging for procedural avatars. Microsoft Rocketbox a public library."
 
+[![Watch the video](https://img.youtube.com/vi/43OWnUQH_p4/maxresdefault.jpg)](https://www.youtube.com/watch?v=43OWnUQH_p4)
 https://www.youtube.com/watch?v=43OWnUQH_p4
 
 ## Contributors
