@@ -36,5 +36,25 @@ public class FixRocketboxMaxImport : AssetPostprocessor
             textureImporter.convertToNormalmap = false;
         }
     }
-}
 
+    void OnPostprocessModel(GameObject g)
+    {
+        string rig_mode = "humanoid"; //"generic"
+        Transform pelvis = g.transform.Find("Bip01").Find("Bip01 Pelvis");
+        pelvis.Find("Bip01 Spine").Find("Bip01 L Thigh").parent= pelvis;
+        pelvis.Find("Bip01 Spine").Find("Bip01 R Thigh").parent = pelvis;
+
+        Transform spine2 = pelvis.Find("Bip01 Spine").Find("Bip01 Spine1").Find("Bip01 Spine2");
+        spine2.Find("Bip01 Neck").Find("Bip01 L Clavicle").parent = spine2;
+        spine2.Find("Bip01 Neck").Find("Bip01 R Clavicle").parent = spine2;
+
+        spine2.Find("Bip01 L Clavicle").rotation = new Quaternion(-0.7215106f, 0, 0, 0.6924035f);
+        spine2.Find("Bip01 R Clavicle").rotation = new Quaternion(0, -0.6925546f, 0.721365f, 0);
+        spine2.Find("Bip01 L Clavicle").Find("Bip01 L UpperArm").rotation = new Quaternion(0, 0, 0, 0);
+        spine2.Find("Bip01 R Clavicle").Find("Bip01 R UpperArm").rotation = new Quaternion(0, 0, 0, 0);
+        
+        var importer = (ModelImporter)assetImporter;
+        importer.animationType = ModelImporterAnimationType.Human;
+    }
+
+}
