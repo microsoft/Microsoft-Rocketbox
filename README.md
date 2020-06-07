@@ -10,7 +10,8 @@ https://www.youtube.com/watch?v=43OWnUQH_p4
 The FixRocketboxMaxImport.cs script under “Assets/Editor” needs to go in “Assets/Editor”  in the Unity project. This will fix the import of the 3dsMax materials to Unity. I.e. Max materials assume that diffuse material was set by the texture, whereas Unity multiplies the texture colour with the flat colour. Second Unity's transparent  materials still show specular highlights and thus hair looks like glass sheets. The material mode "Fade" goes to full transparent. The import tool also selects  the highest resolution mesh as being activated by default.
 By editing this file you might choose another poly level (they are "hipoly", "midpoly", "lowpoly" and "ultralowpoly") Or you could choose not to import by changing OnPreprocessMeshHierarchy.
 
-The FixRocketboxMaxImport was contributed by Prof. Anthony Steed from University College London. 
+The FixRocketboxMaxImport was first contributed by Prof. Anthony Steed from University College London. 
+In a more recent version we have updated the import tool to set the avatars into T-pose and reorganize the bones to optimize for the Unity humanoid rig.
  
 ## Running the sample
 
