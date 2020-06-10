@@ -41,20 +41,27 @@ public class FixRocketboxMaxImport : AssetPostprocessor
     {
         string rig_mode = "humanoid"; //"generic"
         Transform pelvis = g.transform.Find("Bip01").Find("Bip01 Pelvis");
-        pelvis.Find("Bip01 Spine").Find("Bip01 L Thigh").parent= pelvis;
-        pelvis.Find("Bip01 Spine").Find("Bip01 R Thigh").parent = pelvis;
-
-        Transform spine2 = pelvis.Find("Bip01 Spine").Find("Bip01 Spine1").Find("Bip01 Spine2");
-        spine2.Find("Bip01 Neck").Find("Bip01 L Clavicle").parent = spine2;
-        spine2.Find("Bip01 Neck").Find("Bip01 R Clavicle").parent = spine2;
-
-        spine2.Find("Bip01 L Clavicle").rotation = new Quaternion(-0.7215106f, 0, 0, 0.6924035f);
-        spine2.Find("Bip01 R Clavicle").rotation = new Quaternion(0, -0.6925546f, 0.721365f, 0);
-        spine2.Find("Bip01 L Clavicle").Find("Bip01 L UpperArm").rotation = new Quaternion(0, 0, 0, 0);
-        spine2.Find("Bip01 R Clavicle").Find("Bip01 R UpperArm").rotation = new Quaternion(0, 0, 0, 0);
         
-        var importer = (ModelImporter)assetImporter;
-        importer.animationType = ModelImporterAnimationType.Human;
+        if (pelvis == null) return;
+        Transform spine2 = pelvis.Find("Bip01 Spine").Find("Bip01 Spine1").Find("Bip01 Spine2");
+        Transform RClavicle = spine2.Find("Bip01 Neck").Find("Bip01 R Clavicle");
+        Transform LClavicle = spine2.Find("Bip01 Neck").Find("Bip01 L Clavicle");
+
+
+        if (rig_mode == "humanoid")
+        {
+            pelvis.Find("Bip01 Spine").Find("Bip01 L Thigh").parent = pelvis;
+            pelvis.Find("Bip01 Spine").Find("Bip01 R Thigh").parent = pelvis;
+            LClavicle.parent = spine2;
+            RClavicle.parent = spine2;
+        }
+        
+        // set the avatar in T pose
+        LClavicle.rotation = new Quaternion(-0.7215106f, 0, 0, 0.6924035f);
+        RClavicle.rotation = new Quaternion(0, -0.6925546f, 0.721365f, 0);
+        LClavicle.Find("Bip01 L UpperArm").rotation = new Quaternion(0, 0, 0, 0);
+        RClavicle.Find("Bip01 R UpperArm").rotation = new Quaternion(0, 0, 0, 0);
+
     }
 
 }
