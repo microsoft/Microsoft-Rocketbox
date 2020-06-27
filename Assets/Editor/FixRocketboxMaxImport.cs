@@ -39,29 +39,38 @@ public class FixRocketboxMaxImport : AssetPostprocessor
 
     void OnPostprocessModel(GameObject g)
     {
-        string rig_mode = "humanoid"; //"generic"
+        if (g.transform.Find("Bip02") != null) RenameBip(g);
+
         Transform pelvis = g.transform.Find("Bip01").Find("Bip01 Pelvis");
-        
         if (pelvis == null) return;
         Transform spine2 = pelvis.Find("Bip01 Spine").Find("Bip01 Spine1").Find("Bip01 Spine2");
         Transform RClavicle = spine2.Find("Bip01 Neck").Find("Bip01 R Clavicle");
         Transform LClavicle = spine2.Find("Bip01 Neck").Find("Bip01 L Clavicle");
 
+        pelvis.Find("Bip01 Spine").Find("Bip01 L Thigh").parent = pelvis;
+        pelvis.Find("Bip01 Spine").Find("Bip01 R Thigh").parent = pelvis;
+        LClavicle.parent = spine2;
+        RClavicle.parent = spine2;
 
-        if (rig_mode == "humanoid")
-        {
-            pelvis.Find("Bip01 Spine").Find("Bip01 L Thigh").parent = pelvis;
-            pelvis.Find("Bip01 Spine").Find("Bip01 R Thigh").parent = pelvis;
-            LClavicle.parent = spine2;
-            RClavicle.parent = spine2;
-        }
-        
-        // set the avatar in T pose
+
         LClavicle.rotation = new Quaternion(-0.7215106f, 0, 0, 0.6924035f);
         RClavicle.rotation = new Quaternion(0, -0.6925546f, 0.721365f, 0);
         LClavicle.Find("Bip01 L UpperArm").rotation = new Quaternion(0, 0, 0, 0);
         RClavicle.Find("Bip01 R UpperArm").rotation = new Quaternion(0, 0, 0, 0);
 
-    }
 
+
+        var importer = (ModelImporter)assetImporter;
+        //If you need a humanoid avatar, change it here
+        importer.animationType = ModelImporterAnimationType.Generic;
+    }
+    private void RenameBip(GameObject currentBone)
+    {
+        currentBone.name = currentBone.name.Replace("Bip02", "Bip01");
+        for (int i = 0; i < currentBone.transform.childCount; i++)
+        {
+            RenameBip(currentBone.transform.GetChild(i).gameObject);
+        }
+
+    }
 }
