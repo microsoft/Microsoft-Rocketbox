@@ -3,6 +3,10 @@ The Microsoft Rocketbox Avatar library consists of 115 characters and avatars fu
 
 The announcement about the release here> https://www.microsoft.com/en-us/research/blog/microsoft-rocketbox-avatar-library-now-available-for-research-and-academic-use/
 
+This release goes together with a paper that highlights and documents the creation of the library and reviews the research done with rigged avatars as well as explains the importance of having rigged avatars for Virtual Reality. If you are using this library for research you should consider citing it.
+
+_Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard Spanlang,  Antonella Maselli, Domna Banakou, Nuria Pelechano, Sergio Orts Escolano, Veronica Orvahlo, Laura Trutoiu, Markus Wojcik, Maria V. Sanchez-Vives, Jeremy Bailenson, Mel Slater, and Jaron Lanier **"The Rocketbox library and the utility of freely available rigged avatars."** Frontiers in Virtual Reality DOI: [10.3389/frvir.2020.561558](https://www.frontiersin.org/articles/10.3389/frvir.2020.561558/abstract)_
+
 [![AvatarsSample](Docs/AvatarsSample.jpg?raw=true)](https://www.youtube.com/watch?v=43OWnUQH_p4)
 https://www.youtube.com/watch?v=43OWnUQH_p4
 
@@ -18,11 +22,6 @@ In a more recent version we have updated the import tool to set the avatars into
 Import the desired avatar folder (including fbx files and textures of the avatar) to your unity project "Assets" folder.
 
 Once the files are on the correct unity folders project you can open Unity and include the avatar to the scene.
-
-## Documentation
-
-This release goes together with a paper that highlights and documents the creation of the library and reviews the research done with rigged avatars as well as explains the importance of having rigged avatars for Virtual Reality. If you are using this library for research you should consider citing it.
-_Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard Spanlang,  Antonella Maselli, Domna Banakou, Nuria Pelechano, Sergio Orts Escolano, Veronica Orvahlo, Laura Trutoiu, Markus Wojcik, Maria V. Sanchez-Vives, Jeremy Bailenson, Mel Slater, and Jaron Lanier **"The Rocketbox library and the utility of freely available rigged avatars."** Frontiers in Virtual Reality DOI: [10.3389/frvir.2020.561558](https://www.frontiersin.org/articles/10.3389/frvir.2020.561558/abstract)_
 
 
 
