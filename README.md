@@ -21,9 +21,8 @@ Once the files are on the correct unity folders project you can open Unity and i
 
 ## Documentation
 
-This release goes together with a paper that is in preparation that highlights and reviews the research done with rigged avatars as well as explains the importance of having rigged avatars for Virtual Reality.
-
-Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard Spanlang,  Antonella Maselli, Domna Banakou, Nuria Pelechano, Sergio Orts Escolano, Veronica Orvahlo, Laura Trutoiu, Markus Wojcik, Maria V. Sanchez-Vives, Jeremy Bailenson, Mel Slater, and Jaron Lanier "Importance of rigging for procedural avatars. Microsoft Rocketbox a public library."
+This release goes together with a paper that highlights and documents the creation of the library and reviews the research done with rigged avatars as well as explains the importance of having rigged avatars for Virtual Reality. If you are using this library for research you should consider citing it.
+__Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard Spanlang,  Antonella Maselli, Domna Banakou, Nuria Pelechano, Sergio Orts Escolano, Veronica Orvahlo, Laura Trutoiu, Markus Wojcik, Maria V. Sanchez-Vives, Jeremy Bailenson, Mel Slater, and Jaron Lanier "The Rocketbox library and the utility of freely available rigged avatars for procedural animation of virtual humans and embodiment." Frontiers in Virtual Reality DOI: [10.3389/frvir.2020.561558](https://www.frontiersin.org/articles/10.3389/frvir.2020.561558/abstract)__
 
 
 
