@@ -36,3 +36,8 @@ Eyal Ofek - Microsoft Research
 Anthony Steed - University College London, (Visiting Researcher at Microsoft Research when this was conceived)
 
 Dave Garagan - Havok
+
+
+## November 2020 License Update
+
+The library of avatars is now released under MIT License.
