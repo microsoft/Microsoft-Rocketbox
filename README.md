@@ -10,6 +10,11 @@ _Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard 
 [![AvatarsSample](Docs/AvatarsSample.jpg?raw=true)](https://www.youtube.com/watch?v=43OWnUQH_p4)
 https://www.youtube.com/watch?v=43OWnUQH_p4
 
+## UPDATES
+2/2021: Added Unreal batch importer tool. Contribution by Joachim Tesch (Max Planck)
+12/2020: Release of a new library: the Movebox for Microsoft Rocketbox to animate the avatars https://github.com/microsoft/MoveBox-for-Microsoft-Rocketbox
+
+
 ## Setup
 The FixRocketboxMaxImport.cs script under “Assets/Editor” needs to go in “Assets/Editor”  in the Unity project. This will fix the import of the 3dsMax materials to Unity. I.e. Max materials assume that diffuse material was set by the texture, whereas Unity multiplies the texture colour with the flat colour. Second Unity's transparent  materials still show specular highlights and thus hair looks like glass sheets. The material mode "Fade" goes to full transparent. The import tool also selects  the highest resolution mesh as being activated by default.
 By editing this file you might choose another poly level (they are "hipoly", "midpoly", "lowpoly" and "ultralowpoly") Or you could choose not to import by changing OnPreprocessMeshHierarchy.
