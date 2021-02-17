@@ -3,7 +3,15 @@
 # Requirements: Unreal Engine 4.24 and 4.25
  
 # Usage:
- 1. Create new empty Unreal project "UnrealProject"
+The assets need to be located three levels up from the UnrealProject/Content folder 
+
+I.e. Microsoft-Rocketbox/Unreal/UnrealProject/Content
+
+The Python code needs to be directly at Content
+
+The Rocketbox materials are in Content/Rocketbox/Materials
+
+1. Create new empty Unreal project "UnrealProject"
  2. Copy "Rocketbox" folder which contains the master material .uasset files to your Unreal project filesystem content folder (UnrealProject/Content).
     The following folder should then contain the .uasset files: UnrealProject/Content/Rocketbox/Materials/
  3. Open Unreal project and enable "Python" and "Editor Scripting Utilities" Plugins, then restart editor.
@@ -18,8 +26,3 @@
    + Proper use of opacity textures in material (currently fully transparent)
 
 
-The assets need to be located three levels up from the UnrealProject/Content folder 
-Microsoft-Rocketbox/Unreal/UnrealProject/Content
-
-The Python code needs to be directly at Content
-The Rocketbox materials are in Content/Rocketbox/Materials
