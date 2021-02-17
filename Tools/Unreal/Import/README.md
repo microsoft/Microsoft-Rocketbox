@@ -6,7 +6,7 @@
  1. Create new empty Unreal project "UnrealProject"
  3. The Microsoft-Rocketbox/Assets folder need to be located three levels up from the UnrealProject/Content folder 
 I.e. Microsoft-Rocketbox/Unreal/UnrealProject/Content
- 2. Copy "Tool/Unreal/Import/Rocketbox" folder which contains the master material .uasset files to your Unreal project filesystem content folder (UnrealProject/Content).
+ 2. Copy "Tool/Unreal/Import/Rocketbox" folder which contains the master material .uasset files to your Unreal project filesystem content folder (UnrealProject/Content/Rocketbox).
     The Python code needs to be directly at Content
     The following folder should then contain the .uasset files: UnrealProject/Content/Rocketbox/Materials/
  3. Open Unreal project and enable "Python" and "Editor Scripting Utilities" Plugins, then restart editor.
