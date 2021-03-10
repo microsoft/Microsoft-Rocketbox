@@ -3,6 +3,7 @@ using UnityEditor;
 
 public class FixRocketboxMaxImport : AssetPostprocessor
 {
+    bool usingMixamoAnimations = true; 
     void OnPostprocessMaterial(Material material)
     {
         // This fixes two problems with importing 3DSMax materials. The first is that the Max materials
@@ -47,17 +48,19 @@ public class FixRocketboxMaxImport : AssetPostprocessor
         Transform RClavicle = spine2.Find("Bip01 Neck").Find("Bip01 R Clavicle");
         Transform LClavicle = spine2.Find("Bip01 Neck").Find("Bip01 L Clavicle");
 
-        pelvis.Find("Bip01 Spine").Find("Bip01 L Thigh").parent = pelvis;
-        pelvis.Find("Bip01 Spine").Find("Bip01 R Thigh").parent = pelvis;
-        LClavicle.parent = spine2;
-        RClavicle.parent = spine2;
+
+        if(!usingMixamoAnimations){
+            pelvis.Find("Bip01 Spine").Find("Bip01 L Thigh").parent = pelvis;
+            pelvis.Find("Bip01 Spine").Find("Bip01 R Thigh").parent = pelvis;
+            LClavicle.parent = spine2;
+            RClavicle.parent = spine2;
 
 
-        LClavicle.rotation = new Quaternion(-0.7215106f, 0, 0, 0.6924035f);
-        RClavicle.rotation = new Quaternion(0, -0.6925546f, 0.721365f, 0);
-        LClavicle.Find("Bip01 L UpperArm").rotation = new Quaternion(0, 0, 0, 0);
-        RClavicle.Find("Bip01 R UpperArm").rotation = new Quaternion(0, 0, 0, 0);
-
+            LClavicle.rotation = new Quaternion(-0.7215106f, 0, 0, 0.6924035f);
+            RClavicle.rotation = new Quaternion(0, -0.6925546f, 0.721365f, 0);
+            LClavicle.Find("Bip01 L UpperArm").rotation = new Quaternion(0, 0, 0, 0);
+            RClavicle.Find("Bip01 R UpperArm").rotation = new Quaternion(0, 0, 0, 0);
+        }
 
 
         var importer = (ModelImporter)assetImporter;
