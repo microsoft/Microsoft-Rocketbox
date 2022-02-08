@@ -1,3 +1,0 @@
-cd Adults
-
-ls -R | %{Rename-Item $_ -NewName {$_.name -replace ".fbx","_facial.fbx"}
