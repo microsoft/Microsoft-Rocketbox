@@ -11,6 +11,10 @@ _Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard 
 https://www.youtube.com/watch?v=43OWnUQH_p4
 
 ## UPDATES
+3/2022: Release of a new library: the Headbox to do facial blendshape animations on the avatars https://github.com/openVRlab/Headbox
+
+2/2022: Release of avatars with facial blendshapes (15 visemes, 48 FACS, 30 for the Vive facial tracker).
+
 2/2021: Added Unreal batch importer tool. Contribution by Joachim Tesch
 
 12/2020: Release of a new library: the Movebox for Microsoft Rocketbox to animate the avatars https://github.com/microsoft/MoveBox-for-Microsoft-Rocketbox
@@ -43,6 +47,7 @@ Anthony Steed - University College London, (Visiting Researcher at Microsoft Res
 
 Dave Garagan - Havok
 
+Matias Volonte - Northeastern University & Clemenson University (Creation of the blendshapes, and the headbox tool to transfer blendshapes procedurally between avatars)
 
 ## November 2020 License Update
 
