@@ -11,6 +11,8 @@ _Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard 
 https://www.youtube.com/watch?v=43OWnUQH_p4
 
 ## UPDATES
+4/2022: Release of 417 animations compatible with the Microsoft Rocketbox Avatars (in Assets/Animations)
+
 3/2022: Release of a new library: the Headbox to do facial blendshape animations on the avatars https://github.com/openVRlab/Headbox
 
 2/2022: Release of avatars with facial blendshapes (15 visemes, 48 FACS, 30 for the Vive facial tracker).
