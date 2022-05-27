@@ -11,6 +11,8 @@ _Mar Gonzalez-Franco, Eyal Ofek, Ye Pan,  Angus Antley, Anthony Steed, Bernhard 
 https://www.youtube.com/watch?v=43OWnUQH_p4
 
 ## UPDATES
+6/2022: Release of ARkit compatible blendshapes. Contribution by Fang Ma and Matias Volonte
+
 4/2022: Release of 417 animations compatible with the Microsoft Rocketbox Avatars (in Assets/Animations)
 
 3/2022: Release of a new library: the Headbox to do facial blendshape animations on the avatars https://github.com/openVRlab/Headbox
@@ -45,11 +47,13 @@ Markus Wojcik - Rocketbox (Original avatar creation team)
 
 Eyal Ofek - Microsoft Research
 
-Anthony Steed - University College London, (Visiting Researcher at Microsoft Research when this was conceived)
+Anthony Steed - University College London, (Visiting Researcher at Microsoft Research when this repo was conceived)
 
 Dave Garagan - Havok
 
 Matias Volonte - Northeastern University & Clemenson University (Creation of the blendshapes, and the headbox tool to transfer blendshapes procedurally between avatars)
+
+Fang Ma - Goldsmith University, Creation of blendshapes for Vive Tracker and ARkit
 
 ## November 2020 License Update
 
